@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /*  div {
+            width: 100px;
+            height: 100px;background-color: aqua;
+            border: 10px solid pink;
+            padding: 10px;
+            overflow: auto;
+        } */
+        .father {
+            width: 20px;
+            height: 30px;
+            background-color: blueviolet;
+        }
+        .son {
+            width: 10px;
+            height: 10px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div>ghhhhklkg
+        fjdfjdfjdf
+        jdfjdfjdf
+        
+        jdfjdf
+        jdfj
+        dfjdjl
+        kfd
+        ddddddd
+        dddkj
+        lfdfdfdl;</div>
+        <div class="father">
+            <div class="son"></div>
+        </div>
+</body>
+<script>
+    var div =document.querySelector('div')
+    //scrollwidth  的宽度是内容宽度     clientWidth 是盒子宽度 他们都不包含border
+/* console.log(div.scrollWidth)
+console.log(div.clientWidth)
+console.log(div.scrollTop)
+console.log(div.scrollLeft) */
+div.addEventListener('scroll',function() {
+    console.log(div.scrollTop)
+})
+var father =document.querySelector('.father')
+var son =document.querySelector('.son')
+//mouseover 鼠标经过 父子都会有显示    mouseenter 只会在父盒子显示
+/* father.addEventListener('mouseover',function() {
+    console.log(11)
+}) */
+
+father.addEventListener('mouseenter',function() {
+    console.log(22)
+})
+</script>
+</html>

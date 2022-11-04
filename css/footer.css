@@ -1,0 +1,39 @@
+.footer {
+    position: relative;
+    height: 380px;
+    background-color: darkgray;
+}
+.footer .mod_service {
+    position: absolute;
+    top:25px;
+    height: 100px;
+    border-bottom: 1px solid rgb(61, 11, 141);
+  
+}
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+/* li块级元素 可以设置magain padding  行内元素只能设置水平方向  padding/margain--left/right */
+.footer .mod_service li {
+    float: left;
+    width: 300px;
+    height: 58px;
+    background-color: blue;
+    padding-left: 25px;
+}
+.footer .mod_service li img {
+    float: left;
+    width: 57px;
+    height: 58px;
+
+}
+.footer .mod_service li h4 {
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.footer .mod_service li p{
+    margin-left: 15px;
+    font-size: 12px;
+    margin-top: 3px;
+}
